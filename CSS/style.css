@@ -1,0 +1,107 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 15px;
+}
+
+/* Título */
+h2 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Campo para escribir tareas */
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/* Botón para agregar */
+form button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Lista de tareas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Cada tarea */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+/* Texto de la tarea */
+li span {
+    flex: 1;
+    font-size: 16px;
+}
+
+/* Casillas */
+li input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Tareas completadas */
+.completada span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Botón eliminar */
+.eliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .contenedor {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+}
